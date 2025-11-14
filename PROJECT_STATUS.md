@@ -84,7 +84,36 @@
 
 ---
 
-### Day 2 (Nov 15)
+### Day 2 (COMPLETED ✅ - Nov 15) ⭐
+**Goal:** Exception Hierarchy & Retry Logic
+
+**Tasks:**
+- [x] Create `slr/utils/exceptions.py`
+  - [x] Base SLRException
+  - [x] Provider exceptions (5 classes)
+  - [x] Application exceptions (5 classes)
+- [x] Create `slr/utils/retry.py`
+  - [x] retry_with_backoff decorator
+  - [x] retry_on_rate_limit decorator
+  - [x] retry_with_custom_strategy decorator
+  - [x] RetryableOperation context manager
+- [x] Tests for retry logic (140+ tests)
+- [x] Update slr/utils/__init__.py
+- [x] Commit
+
+**Files Created:**
+1. `slr/utils/exceptions.py` (~330 lines)
+2. `slr/utils/retry.py` (~280 lines)
+3. `tests/unit/test_utils/test_exceptions.py` (~460 lines)
+4. `tests/unit/test_utils/test_retry.py` (~530 lines)
+5. `tests/unit/test_utils/__init__.py`
+6. `DAY_2_REPORT.md` (~380 lines)
+
+**Success:** ✅ All functionality implemented, 140+ tests written, code committed!
+
+---
+
+### Day 3 (Nov 16)
 **Goal:** Exception Hierarchy
 
 **Tasks:**
@@ -175,15 +204,15 @@ git push
 
 ## 📊 **PROGRESS TRACKING**
 
-### Week 1 Progress: 0%
-- [ ] Day 1: Core models
-- [ ] Day 2: Exceptions
+### Week 1 Progress: 29% (2/7 days)
+- [x] Day 1: Core models ✅
+- [x] Day 2: Exceptions & Retry ✅
 - [ ] Day 3: Rate limiting & logging
 - [ ] Day 4: Configuration
 - [ ] Day 5-7: CI/CD & docs
 
-### Overall Progress: 0%
-- [ ] Week 1: Foundation (0/7 days)
+### Overall Progress: 3% (2/70 days)
+- [x] Week 1: Foundation (2/7 days) - 29%
 - [ ] Week 2: Provider foundation (0/7 days)
 - [ ] Week 3: OpenAlex provider (0/7 days)
 - [ ] Week 4: Compatibility layer (0/7 days)
