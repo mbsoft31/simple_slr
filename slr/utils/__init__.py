@@ -4,8 +4,8 @@ Utility modules for Simple SLR.
 This package contains utility functions and classes for:
 - Exception handling
 - Retry logic with backoff
-- Rate limiting (coming soon)
-- Logging configuration (coming soon)
+- Rate limiting
+- Logging configuration
 - Configuration management (coming soon)
 """
 
@@ -31,6 +31,24 @@ from .retry import (
     RetryableOperation,
 )
 
+from .rate_limit import (
+    TokenBucket,
+    SlidingWindowRateLimiter,
+    RateLimitDecorator,
+)
+
+from .logging import (
+    setup_logging,
+    get_logger,
+    setup_provider_logging,
+    configure_library_logging,
+    LogContext,
+    PerformanceLogger,
+    log_function_call,
+    create_session_log_file,
+    ColoredFormatter,
+)
+
 __all__ = [
     # Exceptions
     "SLRException",
@@ -50,5 +68,19 @@ __all__ = [
     "retry_on_rate_limit",
     "retry_with_custom_strategy",
     "RetryableOperation",
+    # Rate limiting
+    "TokenBucket",
+    "SlidingWindowRateLimiter",
+    "RateLimitDecorator",
+    # Logging
+    "setup_logging",
+    "get_logger",
+    "setup_provider_logging",
+    "configure_library_logging",
+    "LogContext",
+    "PerformanceLogger",
+    "log_function_call",
+    "create_session_log_file",
+    "ColoredFormatter",
 ]
 
