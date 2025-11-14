@@ -1,0 +1,18 @@
+[
+  "field conditions plant disease pest image imaging vision camera rgb hyperspectral uav drone adapt adaptation shift generalization robustness",
+  "in field plant crop disease pest image imaging vision camera rgb hyperspectral uav drone adapt adaptation generalization robustness shift",
+  "lab to field plant disease pest image vision camera uav drone adapt adaptation generalization robustness deployment",
+  "domain shift plant disease pest plant crop image vision",
+  "dataset shift distribution shift plant crop disease pest image vision",
+  "domain generalization plant crop disease pest image vision",
+  "ood out of distribution plant crop disease pest image vision",
+  "test time adaptation plant disease pest image vision online on the fly",
+  "test time training plant crop disease image vision",
+  "unsupervised domain adaptation plant disease pest plant crop agriculture image vision",
+  "domain adaptation unlabeled plant disease pest plant crop image vision",
+  "source free source-free sfda source data free domain adaptation plant crop agriculture",
+  "source model adaptation source data unavailable crop disease plant disease pest",
+  "continual test time adaptation plant crop image vision",
+  "continual robustness robust adaptive adaptation plant disease pest image vision",
+  "dann domain adversarial disease pest weed field farm agriculture image vision"
+]

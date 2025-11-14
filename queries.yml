@@ -1,0 +1,47 @@
+UDA (unsupervised domain adaptation):
+  - '"unsupervised domain adaptation" AND ("plant disease" OR pest) AND (plant OR crop OR agriculture)'
+  - 'domain adaptation AND unlabeled AND ("plant disease" OR pest) AND (plant OR crop)'
+  - 'domain adaptation AND field AND ("plant disease" OR pest)'
+  - 'UDA AND ("plant disease" OR pest)'
+
+TTA (test-time / online adaptation):
+  - '"test-time adaptation" AND ("plant disease" OR pest) AND (plant OR crop OR agriculture)'
+  - '"online adaptation" AND ("plant disease" OR pest)'
+  - '"entropy minimization" AND "test-time" AND (plant OR crop)'
+  - '("batch norm" OR "BN statistics") AND "test-time" AND (plant OR crop)'
+
+Source-Free Domain Adaptation (SFDA):
+  - '"source-free domain adaptation" AND ("plant disease" OR pest)'
+  - '"source free" AND "domain adaptation" AND (plant OR crop)'
+  - '"without source data" AND "domain adaptation" AND (plant OR crop)'
+  - '"source data unavailable" AND "domain adaptation" AND agriculture'
+
+Continual / Lifelong / Incremental:
+  - '"continual learning" AND ("plant disease" OR pest) AND (plant OR crop OR agriculture)'
+  - '"lifelong learning" AND ("plant disease" OR pest)'
+  - '"class-incremental" AND ("plant disease" OR pest)'
+  - '"continual test-time adaptation" AND (plant OR crop OR agriculture)'
+
+Domain shift / generalization framing:
+  - '"domain shift" AND ("plant disease" OR pest) AND (plant OR crop)'
+  - '"distribution shift" AND (plant OR crop) AND (disease OR pest)'
+  - '"domain generalization" AND (plant OR crop) AND (disease OR pest)'
+  - '(OOD OR "out-of-distribution") AND (plant OR crop) AND (disease OR pest)'
+
+Deployment & robustness (lab→field etc.):
+  - '"lab-to-field" AND ("plant disease" OR pest)'
+  - '"in-field" AND ("plant disease" OR pest) AND robustness'
+  - '"field conditions" AND ("plant disease" OR pest)'
+  - '("cross-season" OR "cross-region" OR "cross-sensor") AND (disease OR pest)'
+
+Method families (common DA/TTA tactics):
+  - '(DANN OR "domain-adversarial") AND (disease OR pest OR weed) AND (field OR farm OR agriculture)'
+  - '"self-supervised" AND (adaptation OR "domain adaptation" OR "test-time") AND ("plant disease" OR pest)'
+  - '("pseudo-label" OR "pseudo labels" OR pseudolabel*) AND ("test-time" OR online) AND (plant OR crop)'
+  - '("synthetic-to-real" OR "style transfer" OR "domain stylization") AND ("plant disease" OR pest) AND adaptation'
+
+Datasets / benchmarks anchor:
+  - '(PlantVillage OR PlantDoc) AND ("domain adaptation" OR "test-time adaptation")'
+  - 'IP102 AND ("domain adaptation" OR "test-time adaptation")'
+  - '(AgriNet OR DeepWeeds) AND ("domain adaptation" OR "test-time adaptation")'
+  - '(PlantVillage OR PlantDoc OR IP102 OR AgriNet) AND "source-free"'

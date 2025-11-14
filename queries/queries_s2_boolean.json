@@ -1,0 +1,18 @@
+[
+  "\"field conditions\" + (\"plant disease\" | pest) + (image | imaging | vision | camera | rgb | hyperspectral | uav | drone) + (adapt* | shift | generaliz* | robust*) -human -clinical -patient -medical",
+  "\"in field\" + (plant | crop) + (disease | pest) + (image | imaging | vision | camera | rgb | hyperspectral | uav | drone) + (adapt* | generaliz* | robust* | shift) -human -clinical",
+  "\"lab to field\"~2 + (\"plant disease\" | pest) + (image | vision | camera | uav | drone) + (adapt* | generaliz* | robust* | deployment)",
+  "\"domain shift\" + (\"plant disease\" | pest) + (plant | crop) + (image | vision)",
+  "(\"dataset shift\" | \"distribution shift\") + (plant | crop) + (disease | pest) + (image | vision)",
+  "\"domain generalization\" + (plant | crop) + (disease | pest) + (image | vision)",
+  "(ood | \"out of distribution\") + (plant | crop) + (disease | pest) + (image | vision)",
+  "(\"test time\"~1 | \"on the fly\" | online) + adaptation + (\"plant disease\" | pest) + (image | vision)",
+  "\"test time\"~1 + training + (plant | crop) + disease + (image | vision)",
+  "\"unsupervised domain adaptation\" + (\"plant disease\" | pest) + (plant | crop | agriculture) + (image | vision)",
+  "domain + adaptation + unlabeled + (\"plant disease\" | pest) + (plant | crop) + (image | vision)",
+  "(\"source free\" | \"source-free\" | sfda | \"source data free\") + \"domain adaptation\" + (plant | crop | agriculture)",
+  "(\"source model\" + adaptation | \"source data\" + unavailable) + (\"crop disease\" | \"plant disease\" | pest)",
+  "\"continual test time\"~2 + adaptation + (plant | crop) + (image | vision)",
+  "continual + (robust* | adapt*) + (\"plant disease\" | pest) + (image | vision)",
+  "(dann | \"domain adversarial\") + (disease | pest | weed) + (field | farm | agriculture) + (image | vision)"
+]
