@@ -1,7 +1,90 @@
-.venv/
-outputs/
-streams/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Testing
 .pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+.benchmarks/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
+
+# Project Specific
+outputs/
+*.log
+*.csv
+*.jsonl
+*.json
+!queries.json
+!queries/*.json
+!tests/fixtures/*.json
+config.yml
+!config.example.yml
+.env
+.env.local
+
+# Documentation
+docs/_build/
+site/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Models & Data (large files)
+models/
+*.pt
+*.pth
+*.bin
+*.onnx
+
+# Temporary
+tmp/
+temp/
+*.tmp
+*.bak
+

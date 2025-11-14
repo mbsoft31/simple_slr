@@ -1,0 +1,67 @@
+# Simple SLR Configuration Example
+# Copy this to config.yml and customize for your needs
+
+# General Settings
+mailto: your.email@example.com  # Required for polite API crawling
+year_min: 2019
+language: en
+
+# Provider Configuration
+providers:
+  openalex:
+    enabled: true
+    rate_limit: 5.0  # requests per second
+    timeout: 30
+
+  crossref:
+    enabled: true
+    rate_limit: 1.0
+    timeout: 30
+
+  arxiv:
+    enabled: true
+    rate_limit: 0.5  # arXiv requests slower rate
+    timeout: 30
+
+  semantic_scholar:
+    enabled: true
+    api_key: ${S2_API_KEY}  # Set in environment or .env file
+    rate_limit: 1.0
+    timeout: 30
+
+# Deduplication Settings
+deduplication:
+  strategy: conservative  # Options: conservative, semantic (v1.1+), hybrid (v1.1+)
+
+  # Conservative strategy settings
+  fuzzy_threshold: 97  # 0-100, higher = more strict
+  max_year_gap: 1      # Maximum year difference for potential duplicates
+
+  # Semantic strategy settings (v1.1+, requires [semantic] extras)
+  # semantic_threshold: 0.92
+  # embedding_model: "allenai/specter2"
+  # use_embeddings: false  # Set to true to enable (downloads ~2GB model)
+
+# Classification Settings (v2.0+)
+classification:
+  enabled: false  # Not available in v1.0
+  method: heuristic  # Options: heuristic, ml, ensemble
+  confidence_threshold: 0.6
+
+# Output Settings
+output:
+  directory: ./outputs
+  formats:
+    - csv
+    - jsonl
+    - bibtex
+
+  # Logging
+  log_level: INFO  # DEBUG, INFO, WARNING, ERROR
+  log_file: slr.log
+
+# Search Settings
+search:
+  max_results_per_query: null  # null = unlimited, or set a number
+  save_raw_responses: false    # Save raw API responses for debugging
+
