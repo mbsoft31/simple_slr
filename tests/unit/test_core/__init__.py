@@ -1,2 +1,4 @@
-"""Tests for core module."""
+"""
+Tests for slr.core module.
+"""
 
